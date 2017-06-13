@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inventory</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../Images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <ul id="Basic_header_ul">
+        <li id="login">
+            <a href="#"><i class="fa fa-user" aria-hidden="true"></i> LOGIN</a>
+        </li>
+        <li id="cart">
+            <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> CART</a>
+            <div id="counter_holder"><span id="counter_holder_span">0</span></div>
+            <ul id="cart_ul">
+                <!--<li>0 items, of $0.00 | <a href="#">Checkout</a></li>-->
+            </ul>
+        </li>
+        <!--<li id="Basic_header_search"><input id="Basic_header_search_input" type="search" name="search" placeholder="Search"></li>-->
+        <li id="Basic_header_contact">
+            <a href="tel:03472542156"><i class="fa fa-phone" aria-hidden="true"></i> 03472542156</a>
+        </li>
+    </ul>
+
+    <!-- END -->
+    <!-- Navigation -->
+    <div id="main_div_inventory">
+        <span id="cart_heading">Inventory</span>
+        <span id="Home_Link"><a href="../index.html">Home</a> / Inventory</span>
+        <div id="nav">
+            <ul>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="about_us.html">About Us </a></li>
+                <li><a href="Inventory.html">Inventory</a></li>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--END-->
+    <!--Main Content-->
+    <div id="Inventory_top_search_div">
+        <select id="Inventory_dropdown_All_Years_margin-left_support">
+            <option value="All Years">All Years</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+        </select>
+        <select>
+            <option value="All Makes">All Makes</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Honda">Honda</option>
+            <option value="Suzuki">Suzuki</option>
+            <option value="BMW">BMW</option>
+        </select>
+        <select>
+            <option value="All Models">All Models</option>
+            <option value="Carolla">Carolla</option>
+            <option value="Prius">Prius</option>
+            <option value="Vigo">Vigo</option>
+            <option value="Prado">Prado</option>
+            <option value="Hilux">Hilux</option>
+            <option value="Camry">Camry</option>
+        </select>
+        <select id="select_body_styles_drop_down">
+            <option value="All Body Styles">All Body Styles</option>
+            <option value="2dr Car">2dr Car</option>
+            <option value="4dr Car">4dr Car</option>
+            <option value="Convertible">Convertible</option>
+            <option value="Sedan">Sedan</option>
+            <option value="Sports Utiility Vehicle">Sports Utiility Vehicle</option>
+        </select>
+        <select>
+            <option value="All Mileages">All Mileages</option>
+            <option value="<1000">&#8249 1000</option>
+            <option value="<2000">&#8249 2000</option>
+            <option value="<3000">&#8249 3000</option>
+            <option value="<4000">&#8249 4000</option>
+            <option value="<5000">&#8249 5000</option>
+            <option value="<6000">&#8249 6000</option>
+            <option value="<7000">&#8249 7000</option>
+            <option value="<8000">&#8249 8000</option>
+            <option value="<9000">&#8249 9000</option>
+            <option value="<10000">&#8249 10000</option>
+        </select>
+        <select id="drop_down_transmission_economies">
+            <option value="All Transmissions">All Transmissions</option>
+            <option value="5-Speed Manual">5-Speed Manual</option>
+            <option value="6-Speed Automatic">6-Speed Automatic</option>
+            <option value="6-Speed Manual">6-Speed Manual</option>
+            <option value="6-Speed Semi - Auto">6-Speed Semi - Auto</option>
+            <option value="7-Speed PDK">6-Speed PDK</option> 
+            <option value="8 Speed Automatic">8 Speed Automatic</option>
+            <option value="8 Speed Tiptronic">8 Speed Tiptronic</option>
+        </select>
+        <select id="drop_down_fuel_economies">
+            <option value="All Fuel Economies">All Fuel Economies</option>
+            <option value="<10">&#8249 10</option>
+            <option value="<20">&#8249 20</option>
+            <option value="<30">&#8249 30</option>
+            <option value="<40">&#8249 40</option>
+            <option value="<50">&#8249 50</option>
+        </select>
+        <select>
+            <option value="All Conditions">All Conditions</option>
+            <option value="Brand New">Brand New</option>
+            <option value="Slightly Used">Slightly Used</option>
+            <option value="Used">Used</option>
+        </select>
+        <select name="locations">
+            <option value="All Locations">All Locations</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Islamabad">Islamabad</option>
+        </select>
+        <select name="Price Range">
+            <option value="All Prices">All Prices</option>
+            <option value="5 Lac">5 Lac</option>
+            <option value="10 Lac">10 Lac</option>
+            <option value="15 Lac">15 Lac</option>
+            <option value="20 Lac">20 Lac</option>
+            <option value="25 Lac">25 Lac</option>
+        </select>
+        <p id="Inventory_sortby_p">Sort By:
+            <select id="Inventory_sortby" style="margin-top: 15px !important;padding-top: 0px !important;width: 10%;">
+                <option value="Year Ascending">Year Assending</option>
+                <option value="Year Descending">Year Descending</option>
+            </select>
+        </p>
+    </div>
+    <div id="Inventory_main_Div">
+        <div id="Inventory_main_Div_left">
+            <h3>Search our inventory</h3>
+            <button>Reset Search Filters</button>
+            <h3>Year:</h3>
+            <ul>
+                <li>2010(1)</li>
+                <li>2011(2)</li>
+                <li>2012(5)</li>
+                <li>2013(10)</li>
+                <li>2014(3)</li>
+                <li>2015(7)</li>
+                <li>2016(12)</li>
+            </ul>
+            <h3 id="Inventory_main_Div_left_unique_div">Make:</h3>
+            <ul>
+                <li>Toyota</li>
+                <li>Honda</li>
+                <li>Suzuki</li>
+                <li>BMW</li>
+            </ul>
+        </div>
+        <div id="Inventory_main_Div_right">
+            <div class="Inventory_main_Div_right_rows">
+                <div style="margin-left: 7%;position: relative;" class="Inventory_main_Div_right_car_show">
+                    <div class="ribbon"><span style="background-color: #C7081B;">Just Arrived</span></div>
+                    <a href="#" style="text-decoration: none;">
+                        <div>
+                            <h3 style="display:inline;text-decoration: none;" class="car_names">toyota carolla<br />altis grande 1.8L</h3>
+
+                            <img src="../Images/Inventory Page/gallery_grande3.jpg" alt="Toyota Altis Grande" class="Inventory_main_Div_right_car_show_img"
+                            />
+                            <table class="Inventory_main_Div_right_car_show_table">
+                                <tr>
+                                    <th>Body Style: </th>
+                                    <td>Covertible</td>
+                                </tr>
+                                <tr>
+                                    <th>Mileage: </th>
+                                    <td>12 - 16 KM/LITER
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Transmission: </th>
+                                    <td>Automatic</td>
+                                </tr>
+                                <tr>
+                                    <th>Drive train: </th>
+                                    <td>AWD</td>
+                                </tr>
+                                <tr>
+                                    <th>Engine: </th>
+                                    <td>1798 cc
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Price: </th>
+                                </tr>
+                            </table>
+                            <span style="top: 420px;left: 45%;" class="Inventory_main_Div_right_car_show_table_supporter_span" class="car_prices">2,389,000<br /><span>Plus Sales Tax</span></span>
+                        </div>
+                        <img class="Inventory_main_Div_right_car_show_supporter_img" src="../Images/Inventory Page/carfax1.png" />
+                    </a>
+                    <button onclick="addToCart(0)" class="cart_buttons"><i class="fa fa-cart-plus" aria-hidden="true"></i> 
+ Add To Cart</button>
+                    <div class="Inventory_main_Div_right_car_show_imortant_div">
+                        <a href="" JavaScript:void(0) ""><button><img src="../Images/Icons/movie-symbol-of-video-camera.png" />View Video</button></a>
+                        <a href="#"><button style="margin-left: 12%;"><img  src="../Images/Icons/plus-4-16.png" />View Details</button></a>
+                    </div>
+                </div>
+                <div style="margin-left: 2%;position: relative;" class="Inventory_main_Div_right_car_show">
+                    <a href="#" style="text-decoration: none;">
+                        <div>
+                            <h3 style="display:inline;text-decoration: none;" class="car_names">2017 Honda<br />Civic Sedan</h3>
+
+                            <img src="../Images/Inventory Page/Civic Sedan.jpg" alt="Honda Civic Sedan 2017" class="Inventory_main_Div_right_car_show_img"
+                            />
+                            <table class="Inventory_main_Div_right_car_show_table">
+                                <tr>
+                                    <th>Body Style: </th>
+                                    <td>Covertible</td>
+                                </tr>
+                                <tr>
+                                    <th>Mileage: </th>
+                                    <td>12 - 16 KM/LITER
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Transmission: </th>
+                                    <td>Automatic</td>
+                                </tr>
+                                <tr>
+                                    <th>Drive train: </th>
+                                    <td>AWD</td>
+                                </tr>
+                                <tr>
+                                    <th>Engine: </th>
+                                    <td>1798 cc
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Price: </th>
+                                </tr>
+                            </table>
+                            <span style="top: 420px;left: 45%;" class="Inventory_main_Div_right_car_show_table_supporter_span">1,964,607<br /><span>Plus Sales Tax</span></span>
+                        </div>
+                        <img class="Inventory_main_Div_right_car_show_supporter_img" src="../Images/Inventory Page/carfax1.png" />
+                    </a>
+                    <button onclick="addToCart(1)" class="cart_buttons"><i class="fa fa-cart-plus" aria-hidden="true"></i> 
+ Add To Cart</button>
+                    <div class="Inventory_main_Div_right_car_show_imortant_div">
+                        <a href="" JavaScript:void(0) ""><button><img src="../Images/Icons/movie-symbol-of-video-camera.png" />View Video</button></a>
+                        <a href="#"><button style="margin-left: 12%;"><img  src="../Images/Icons/plus-4-16.png" />View Details</button></a>
+                    </div>
+                </div>
+                <div style="margin-right: 3%;margin-left: 2%;position: relative;" class="Inventory_main_Div_right_car_show">
+                    <div class="ribbon"><span style="background-color: #008ECC;">Just Arrived</span></div>
+                    <a href="#" style="text-decoration: none;">
+                        <div>
+                            <h3 style="display:inline;text-decoration: none;" class="car_names">2017 <br /> suzuki vitara</h3>
+
+                            <img src="../Images/Inventory Page/1.-2015-Suzuki-Vitara-Photo.jpg" alt="Toyota Altis Grande" class="Inventory_main_Div_right_car_show_img"
+                            />
+                            <table class="Inventory_main_Div_right_car_show_table">
+                                <tr>
+                                    <th>Body Style: </th>
+                                    <td>Covertible</td>
+                                </tr>
+                                <tr>
+                                    <th>Mileage: </th>
+                                    <td>12 - 16 KM/LITER
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Transmission: </th>
+                                    <td>Automatic</td>
+                                </tr>
+                                <tr>
+                                    <th>Drive train: </th>
+                                    <td>AWD</td>
+                                </tr>
+                                <tr>
+                                    <th>Engine: </th>
+                                    <td>1798 cc
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Price: </th>
+                                </tr>
+                            </table>
+                            <span style="top: 420px;left: 45%" class="Inventory_main_Div_right_car_show_table_supporter_span">3,490,000<br /><span>Plus Sales Tax</span></span>
+                        </div>
+                        <img class="Inventory_main_Div_right_car_show_supporter_img" src="../Images/Inventory Page/carfax1.png" />
+                    </a>
+                    <button onclick="addToCart(2)" class="cart_buttons"><i class="fa fa-cart-plus" aria-hidden="true"></i> 
+ Add To Cart</button>
+                    <div class="Inventory_main_Div_right_car_show_imortant_div">
+                        <a href="" JavaScript:void(0) ""><button><img src="../Images/Icons/movie-symbol-of-video-camera.png" />View Video</button></a>
+                        <a href="#"><button style="margin-left: 12%;"><img  src="../Images/Icons/plus-4-16.png" />View Details</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="Inventory_main_Div_right_rows">
+                <div style="margin-left: 7%;position: relative;" class="Inventory_main_Div_right_car_show">
+                    <a href="#" style="text-decoration: none;">
+                        <div>
+                            <h3 style="display:inline;text-decoration: none;" class="car_names">toyota Camry<br />2017</h3>
+
+                            <img src="../Images/Inventory Page/CAM_MY15_0044_V001.jpg" alt="Toyota Camry" class="Inventory_main_Div_right_car_show_img"
+                            />
+                            <table class="Inventory_main_Div_right_car_show_table">
+                                <tr>
+                                    <th>Body Style: </th>
+                                    <td>Covertible</td>
+                                </tr>
+                                <tr>
+                                    <th>Mileage: </th>
+                                    <td>12 - 16 KM/LITER
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Transmission: </th>
+                                    <td>Automatic</td>
+                                </tr>
+                                <tr>
+                                    <th>Drive train: </th>
+                                    <td>AWD</td>
+                                </tr>
+                                <tr>
+                                    <th>Engine: </th>
+                                    <td>1798 cc
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Price: </th>
+                                </tr>
+                            </table>
+                            <span style="top: 420px;left: 45%;" class="Inventory_main_Div_right_car_show_table_supporter_span">2,418,543<br /><span>Plus Sales Tax</span></span>
+                        </div>
+                        <img class="Inventory_main_Div_right_car_show_supporter_img" src="../Images/Inventory Page/carfax1.png" />
+                    </a>
+                    <button onclick="addToCart(3)" class="cart_buttons"><i class="fa fa-cart-plus" aria-hidden="true"></i> 
+ Add To Cart</button>
+                    <div class="Inventory_main_Div_right_car_show_imortant_div">
+                        <a href="" JavaScript:void(0) ""><button><img src="../Images/Icons/movie-symbol-of-video-camera.png" />View Video</button></a>
+                        <a href="#"><button style="margin-left: 12%;"><img  src="../Images/Icons/plus-4-16.png" />View Details</button></a>
+                    </div>
+                </div>
+                <div style="margin-left: 2%;position: relative;" class="Inventory_main_Div_right_car_show">
+                    <div class="ribbon"><span style="background-color: #0541AF">Just Arrived</span></div>
+                    <a href="#" style="text-decoration: none;">
+                        <div>
+                            <h3 style="display:inline;text-decoration: none;" class="car_names">Suzuki <br />Swift Sport 5dr</h3>
+
+                            <img src="../Images/Homepage Images/suzuki_swift_frontaction.jpg" alt="Suzuki Swift" class="Inventory_main_Div_right_car_show_img"
+                            />
+                            <table class="Inventory_main_Div_right_car_show_table">
+                                <tr>
+                                    <th>Body Style: </th>
+                                    <td>Covertible</td>
+                                </tr>
+                                <tr>
+                                    <th>Mileage: </th>
+                                    <td>12 - 16 KM/LITER
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Transmission: </th>
+                                    <td>Automatic</td>
+                                </tr>
+                                <tr>
+                                    <th>Drive train: </th>
+                                    <td>AWD</td>
+                                </tr>
+                                <tr>
+                                    <th>Engine: </th>
+                                    <td>1798 cc
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Price: </th>
+                                </tr>
+                            </table>
+                            <span style="top: 420px;left: 45%;" class="Inventory_main_Div_right_car_show_table_supporter_span">1,511,000<br /><span>Plus Sales Tax</span></span>
+                        </div>
+                        <img class="Inventory_main_Div_right_car_show_supporter_img" src="../Images/Inventory Page/carfax1.png" />
+                    </a>
+                    <button onclick="addToCart(4)" class="cart_buttons"><i class="fa fa-cart-plus" aria-hidden="true"></i> 
+ Add To Cart</button>
+                    <div class="Inventory_main_Div_right_car_show_imortant_div">
+                        <a href="" JavaScript:void(0) ""><button><img src="../Images/Icons/movie-symbol-of-video-camera.png" />View Video</button></a>
+                        <a href="#"><button style="margin-left: 12%;"><img  src="../Images/Icons/plus-4-16.png" />View Details</button></a>
+                    </div>
+                </div>
+                <div style="margin-right: 3%;margin-left: 2%;position: relative;" class="Inventory_main_Div_right_car_show">
+                    <a href="#" style="text-decoration: none;">
+                        <div>
+                            <h3 style="display:inline;text-decoration: none;" class="car_names">2017 Honda<br />Accord Sedan</h3>
+
+                            <img src="../Images/Inventory Page/2017-accord-sedan-lx-ext-nh.jpg" alt="Honda Accord Sedan" class="Inventory_main_Div_right_car_show_img"
+                            />
+                            <table class="Inventory_main_Div_right_car_show_table">
+                                <tr>
+                                    <th>Body Style: </th>
+                                    <td>Covertible</td>
+                                </tr>
+                                <tr>
+                                    <th>Mileage: </th>
+                                    <td>12 - 16 KM/LITER
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Transmission: </th>
+                                    <td>Automatic</td>
+                                </tr>
+                                <tr>
+                                    <th>Drive train: </th>
+                                    <td>AWD</td>
+                                </tr>
+                                <tr>
+                                    <th>Engine: </th>
+                                    <td>1798 cc
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Price: </th>
+                                </tr>
+                            </table>
+                            <span style="top: 420px;left: 45%" class="Inventory_main_Div_right_car_show_table_supporter_span">2,354,069<br /><span>Plus Sales Tax</span></span>
+                        </div>
+                        <img class="Inventory_main_Div_right_car_show_supporter_img" src="../Images/Inventory Page/carfax1.png" />
+                    </a>
+                    <button onclick="addToCart(5)" class="cart_buttons"><i class="fa fa-cart-plus" aria-hidden="true"></i> 
+ Add To Cart</button>
+                    <div class="Inventory_main_Div_right_car_show_imortant_div">
+                        <a href="" JavaScript:void(0) ""><button><img src="../Images/Icons/movie-symbol-of-video-camera.png" />View Video</button></a>
+                        <a href="#"><button style="margin-left: 12%;"><img  src="../Images/Icons/plus-4-16.png" />View Details</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="Inventory_main_Div_right_rows">
+                <div style="margin-left: 7%;position: relative;" class="Inventory_main_Div_right_car_show">
+                    <a href="Toyota Prius.html" style="text-decoration: none;">
+                        <div>
+                            <h3 style="display:inline;text-decoration: none;" class="car_names">toyota prius<br />2017</h3>
+
+                            <img src="../Images/Inventory Page/PRS_MY16_0048_V001.jpg" alt="Toyota Prius" class="Inventory_main_Div_right_car_show_img"
+                            />
+                            <table class="Inventory_main_Div_right_car_show_table">
+                                <tr>
+                                    <th>Body Style: </th>
+                                    <td>Covertible</td>
+                                </tr>
+                                <tr>
+                                    <th>Mileage: </th>
+                                    <td>12 - 16 KM/LITER
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Transmission: </th>
+                                    <td>Automatic</td>
+                                </tr>
+                                <tr>
+                                    <th>Drive train: </th>
+                                    <td>AWD</td>
+                                </tr>
+                                <tr>
+                                    <th>Engine: </th>
+                                    <td>1798 cc
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Price: </th>
+                                </tr>
+                            </table>
+                            <span style="top: 420px;left: 45%;" class="Inventory_main_Div_right_car_show_table_supporter_span">2,587,851<br /><span>Plus Sales Tax</span></span>
+                        </div>
+                        <img class="Inventory_main_Div_right_car_show_supporter_img" src="../Images/Inventory Page/carfax1.png" />
+                    </a>
+                    <button onclick="addToCart(6)" class="cart_buttons"><i class="fa fa-cart-plus" aria-hidden="true"></i> 
+ Add To Cart</button>
+                    <div class="Inventory_main_Div_right_car_show_imortant_div">
+                        <a href="" JavaScript:void(0) ""><button><img src="../Images/Icons/movie-symbol-of-video-camera.png" />View Video</button></a>
+                        <a href="Toyota Prius.html"><button style="margin-left: 12%;"><img  src="../Images/Icons/plus-4-16.png" />View Details</button></a>
+                    </div>
+                </div>
+                <div style="margin-left: 2%;position: relative;" class="Inventory_main_Div_right_car_show">
+                    <div class="ribbon"><span style="background-color: #7F4F19">Just Arrived</span></div>
+                    <a href="#" style="text-decoration: none;">
+                        <div>
+                            <h3 style="display:inline;text-decoration: none;" class="car_names">2017 <br />Suzuki Ciaz</h3>
+
+                            <img src="../Images/Inventory Page/Suzuki-Ciaz-2017-Price-in-Pakistan.jpg" alt="Suzuki Ciaz" class="Inventory_main_Div_right_car_show_img"
+                            />
+                            <table class="Inventory_main_Div_right_car_show_table">
+                                <tr>
+                                    <th>Body Style: </th>
+                                    <td>Covertible</td>
+                                </tr>
+                                <tr>
+                                    <th>Mileage: </th>
+                                    <td>12 - 16 KM/LITER
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Transmission: </th>
+                                    <td>Automatic</td>
+                                </tr>
+                                <tr>
+                                    <th>Drive train: </th>
+                                    <td>AWD</td>
+                                </tr>
+                                <tr>
+                                    <th>Engine: </th>
+                                    <td>1798 cc
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Price: </th>
+                                </tr>
+                            </table>
+                            <span style="top: 420px;left: 45%;" class="Inventory_main_Div_right_car_show_table_supporter_span">1,839,000<br /><span>Plus Sales Tax</span></span>
+                        </div>
+                        <img class="Inventory_main_Div_right_car_show_supporter_img" src="../Images/Inventory Page/carfax1.png" />
+                    </a>
+                    <button onclick="addToCart(7)" class="cart_buttons"><i class="fa fa-cart-plus" aria-hidden="true"></i> 
+ Add To Cart</button>
+                    <div class="Inventory_main_Div_right_car_show_imortant_div">
+                        <a href="JavaScript:void(0)"><button><img src="../Images/Icons/movie-symbol-of-video-camera.png" />View Video</button></a>
+                        <a href="#"><button style="margin-left: 12%;"><img  src="../Images/Icons/plus-4-16.png" />View Details</button></a>
+                    </div>
+                </div>
+                <div style="margin-right: 3%;margin-left: 2%;position: relative;" class="Inventory_main_Div_right_car_show">
+                    <a href="#" style="text-decoration: none;">
+                        <div>
+                            <h3 style="display:inline;text-decoration: none;" class="car_names">2017 <br />Honda Pilot</h3>
+
+                            <img src="../Images/Inventory Page/2016-pilot-touring-awd-ext-nh731px-winding-road-1400-1x.jpg" alt="Honda Pilot" class="Inventory_main_Div_right_car_show_img"
+                            />
+                            <table class="Inventory_main_Div_right_car_show_table">
+                                <tr>
+                                    <th>Body Style: </th>
+                                    <td>Covertible</td>
+                                </tr>
+                                <tr>
+                                    <th>Mileage: </th>
+                                    <td>12 - 16 KM/LITER
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Transmission: </th>
+                                    <td>Automatic</td>
+                                </tr>
+                                <tr>
+                                    <th>Drive train: </th>
+                                    <td>AWD</td>
+                                </tr>
+                                <tr>
+                                    <th>Engine: </th>
+                                    <td>1798 cc
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Price: </th>
+                                </tr>
+                            </table>
+                            <span style="top: 420px;left: 45%" class="Inventory_main_Div_right_car_show_table_supporter_span">3,207,426<br /><span>Plus Sales Tax</span></span>
+                        </div>
+                        <img class="Inventory_main_Div_right_car_show_supporter_img" src="../Images/Inventory Page/carfax1.png" />
+                    </a>
+                    <button onclick="addToCart(8)" class="cart_buttons"><i class="fa fa-cart-plus" aria-hidden="true"></i> 
+ Add To Cart</button>
+                    <div class="Inventory_main_Div_right_car_show_imortant_div">
+                        <a href="" JavaScript:void(0) ""><button><img src="../Images/Icons/movie-symbol-of-video-camera.png" />View Video</button></a>
+                        <a href="#"><button style="margin-left: 12%;"><img  src="../Images/Icons/plus-4-16.png" />View Details</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End-->
+    <!-- Sub Footer -->
+    <div id="sub-footer">
+        <div id="sub-footer-div">
+            <div id="sub-footer-table-controlling-div">
+                <table id="sub-footer-table">
+                    <tr>
+                        <th>About Us</th>
+                        <th>Contact Us</th>
+                        <th>Newsletter</th>
+                    </tr>
+                    <tr>
+                        <td class="sub-footer-table-td"> <img src="../Images/Author/IMG_20160725_170645.gif" alt="Author" id="author-image" /> Action Center
+                            is a central place to view alerts and take actions that can help keep Windows running smoothly.
+                            Action Center is a central place to view alerts and take actions that can help keep Windows running
+                            smoothly.
+                        </td>
+                        <td class="sub-footer-table-td"><img src="../Images/Icons/phone-16.png" alt="Phone" class="phone" /> Phone: <a href="tel: 03012793707"
+                                id="Sub-footer-my-number">03012793707</a> <br /><br /> Address: City Motors, near Chase Value
+                            Centre, Khalid Bin Walid Road, Karachi. <br /><br /><img src="../Images/Icons/email.png" alt="email"
+                                id="sub-email"> Email: <span id="sub-footer-myemail"><a href="mailto:ahsanusmanabduljabbar@gmail.com">ahsanusmanabduljabbar@gmail.com</a></span><br
+                            /><br /></td>
+                        <td class="sub-footer-table-td">By subscribe to our company newsletter you will always be up-to-date on our latest promotions, deals
+                            and vehicles inventory. <br /><br />
+                            <form action="#" method="post">
+                                <input type="email" name="email" placeholder="Enter your Email address" id="sub-footer-email-ask" />
+                                <br /><br />
+                                <input type="submit" name="Subscribe" value="Subscribe" id="sub-footer-subscribe" />
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+    <!-- Main Footer -->
+    <div id="footer">
+        <table>
+            <tr>
+                <th class="footer-table-spacing"></th>
+            </tr>
+            <tr>
+                <th class="footer-table-spacing"></th>
+            </tr>
+            <tr>
+                <th class="footer-table-spacing"></th>
+                <th id="footer-logo">City Motors</th>
+                <th class="footer-table-center-spacing"></th>
+                <!-- Social Media Bar -->
+                <th id="footer-table-social-media-bar">
+                    <ul id="social_media_ul">
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common facebook" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common twitter" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common youtube" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common vimeo" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common linkedin" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common rss" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common unknown" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common skype" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common g" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common pinterest" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common instagram" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common unknown2" /></a>
+                        </li>
+                    </ul>
+                </th>
+            </tr>
+            <tr>
+                <!--<tr>
+                <th class="footer-table-spacing"></th>
+            </tr>-->
+                <tr>
+                    <td class="footer-table-spacing"></td>
+                    <td id="footer-copright-notice">Copyright &copy; 2016 by Ahsan Usman. All right reserved.</td>
+                    <th class="footer-table-center-spacing"></th>
+                    <th id="footer-table-navigation">
+                        <a href="../index.html">Home</a>
+                        <a href="Inventory.html">Inventory</a>
+                        <a href="about_us.html">About Us</a>
+                        <a href="contact_us.html">Contact Us</a>
+                    </th>
+                </tr>
+        </table>
+    </div>
+    <!-- END -->
+    <script src="../JS/scripts.js"></script>
+    <script src="../JS/records.js"></script>
+    <script src="../JS/cart.js"></script>
+</body>
+
+</html>

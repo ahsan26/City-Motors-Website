@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link rel="shortcut icon" href="../Images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <ul id="Basic_header_ul">
+        <li id="login">
+            <a href="cart.html"><i class="fa fa-user" aria-hidden="true"></i> LOGIN</a>
+        </li>
+        <li id="cart">
+            <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> CART</a>
+            <div id="counter_holder"><span id="counter_holder_span">0</span></div>
+            <ul id="cart_ul">
+                <!--<li>0 items, of $0.00 | <a href="#">Checkout</a></li>-->
+            </ul>
+        </li>
+        <!--<li id="Basic_header_search"><input id="Basic_header_search_input" type="search" name="search" placeholder="Search"></li>-->
+        <li id="Basic_header_contact">
+            <a href="tel:03472542156"><i class="fa fa-phone" aria-hidden="true"></i> 03472542156</a>
+        </li>
+    </ul>
+
+    <!-- END -->
+    <!-- Navigation -->
+    <div id="main_div_inventory">
+        <span id="cart_heading">Checkout</span>
+        <span id="Home_Link"><a href="../index.html">Home</a> / Checkout</span>
+        <div id="nav">
+            <ul>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="about_us.html">About Us </a></li>
+                <li><a href="Inventory.html">Inventory</a></li>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--END-->
+    <!--Main Content-->
+    <div id="spinner">
+
+    </div>
+    <div id="checkout_main">
+        <div id="important_details">
+            <p>Billing Details</p>
+            <form action="JavaScript:void(0)" onsubmit="finalization();" id="checkout_form">
+                <div class="important_details_row">
+                    <div>
+                        <label for="firstName" id="firstName_label" class="checkout_label">First Name</label>
+                        <input type="text" class="checkout_input_styler" id="firstName" onblur="txtChecker(id,'firstNamee');" autofocus="autofocus"
+                        /></div>
+                    <div>
+                        <label for="lastName" id="lastName_label" class="checkout_label">Last Name</label>
+                        <input type="text" class="checkout_input_styler" id="lastName" onblur="txtChecker(id,'lastNamee');" /></div>
+                </div>
+                <label for="company_name" id="firstName_label" class="checkout_label">Company Name</label>
+                <input type="text" class="checkout_input_styler" id="company_name" style="width:770px;" onblur="forOptional(id);" />
+                <label for="checkout_countries" class="checkout_label">Country</label>
+                <select id="checkout_countries" onchange="countryGet();">
+                    <option value="-- Select Your Country --">-- Select Your Country --</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="Italy">Italy</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Oman">Oman</option>
+                </select>
+                <label for="street_address" class="checkout_label">Address</label>
+                <input type="text" id="street_address" placeholder="Street Address" onblur="txtChecker(id,'address');" /><br
+                /><br />
+                <input type="text" id="street_address_extra" placeholder="Appartement,suite,unit etc.Optional" onblur="forOptional(id);"
+                />
+                <label for="postalCOde" class="checkout_label">Postal Code</label>
+                <input type="number" id="postalCOde" onblur="postalNumChecker(id);" />
+                <label for="city" class="checkout_label">Town / City</label>
+                <input type="text" id="city" onblur="txtChecker(id,'town');" />
+                <div class="important_details_row">
+                    <div>
+                        <label for="firstName" id="user_checkout_email_label" class="checkout_label">Email Address</label>
+                        <input type="email" class="checkout_input_styler" id="user_checkout_email" onblur="emailChecker(id,'email');" /></div>
+                    <div>
+                        <label for="firstName" id="checkout_phone_label" class="checkout_label">Phone</label>
+                        <input type="number" class="checkout_input_styler" id="checkout_phone" onblur="cellNumChecker(id);" /></div>
+                </div>
+                <div id="checkout_products_container">
+                    <p>Your Order</p>
+                    <table id="checkout_products">
+
+                    </table>
+                </div>
+                <div>
+                    <input type="radio" id="checkout_check_payments" name="payment_method" value="Check Payments" checked="checked" onclick="checkout_btn_updater(0);"
+                    />
+                    <label for="checkout_check_payments" class="checkout_radios checkout-different"> Check Payments</label>
+                    <br>
+                    <br>
+                    <input type="radio" name="payment_method" value="Paypal" id="checkout_paypal" onclick="checkout_btn_updater(1);" />                    <label for="checkout_paypal" class="checkout_radios checkout-different"> Paypal</label> <img id="paypal"
+                        src="../Images/AM_mc_vs_dc_ae.jpg" width="15%" height="50px" />
+                </div>
+                <button type="submit" id="finall_Checkout_btn">Place Order</button>
+            </form>
+        </div>
+        <div id="additionalInfo">
+            <p id="main_heading">Additional Information</p>
+            <p id="primary">Order Notes</p>
+            <textarea rows="5" cols="60" placeholder="Notes about your order, e.g. special Notes for Delivery"></textarea>
+        </div>
+    </div>
+    <!--End-->
+    <!-- Sub Footer -->
+    <div id="sub-footer">
+        <div id="sub-footer-div">
+            <div id="sub-footer-table-controlling-div">
+                <table id="sub-footer-table">
+                    <tr>
+                        <th>About Us</th>
+                        <th>Contact Us</th>
+                        <th>Newsletter</th>
+                    </tr>
+                    <tr>
+                        <td class="sub-footer-table-td"> <img src="../Images/Author/IMG_20160725_170645.gif" alt="Author" id="author-image" /> Action Center
+                            is a central place to view alerts and take actions that can help keep Windows running smoothly.
+                            Action Center is a central place to view alerts and take actions that can help keep Windows running
+                            smoothly.
+                        </td>
+                        <td class="sub-footer-table-td"><img src="../Images/Icons/phone-16.png" alt="Phone" class="phone" /> Phone: <a href="tel: 03012793707"
+                                id="Sub-footer-my-number">03012793707</a> <br /><br /> Address: City Motors, near Chase Value
+                            Centre, Khalid Bin Walid Road, Karachi. <br /><br /><img src="../Images/Icons/email.png" alt="email"
+                                id="sub-email"> Email: <span id="sub-footer-myemail"><a href="mailto:ahsanusmanabduljabbar@gmail.com">ahsanusmanabduljabbar@gmail.com</a></span><br
+                            /><br /></td>
+                        <td class="sub-footer-table-td">By subscribe to our company newsletter you will always be up-to-date on our latest promotions, deals
+                            and vehicles inventory. <br /><br />
+                            <form action="#" method="post">
+                                <input type="email" name="email" placeholder="Enter your Email address" id="sub-footer-email-ask" />
+                                <br /><br />
+                                <input type="submit" name="Subscribe" value="Subscribe" id="sub-footer-subscribe" />
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+    <!-- Main Footer -->
+    <div id="footer">
+        <table>
+            <tr>
+                <th class="footer-table-spacing"></th>
+            </tr>
+            <tr>
+                <th class="footer-table-spacing"></th>
+            </tr>
+            <tr>
+                <th class="footer-table-spacing"></th>
+                <th id="footer-logo">City Motors</th>
+                <th class="footer-table-center-spacing"></th>
+                <!-- Social Media Bar -->
+                <th id="footer-table-social-media-bar">
+                    <ul id="social_media_ul">
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common facebook" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common twitter" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common youtube" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common vimeo" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common linkedin" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common rss" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common unknown" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common skype" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common g" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common pinterest" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common instagram" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common unknown2" /></a>
+                        </li>
+                    </ul>
+                </th>
+            </tr>
+            <tr>
+                <!--<tr>
+                <th class="footer-table-spacing"></th>
+            </tr>-->
+                <tr>
+                    <td class="footer-table-spacing"></td>
+                    <td id="footer-copright-notice">Copyright &copy; 2016 by Ahsan Usman. All right reserved.</td>
+                    <th class="footer-table-center-spacing"></th>
+                    <th id="footer-table-navigation">
+                        <a href="../index.html">Home</a>
+                        <a href="Inventory.html">Inventory</a>
+                        <a href="about_us.html">About Us</a>
+                        <a href="contact_us.html">Contact Us</a>
+                    </th>
+                </tr>
+        </table>
+    </div>
+    <!-- END -->
+    <script src="../JS/scripts.js"></script>
+    <script src="../JS/records.js"></script>
+    <script src="../JS/cart.js"></script>
+    <script src="../JS/checkout.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toyota Prius</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+
+    <ul id="Basic_header_ul">
+        <li id="login">
+            <a href="cart.html"><i class="fa fa-user" aria-hidden="true"></i> LOGIN</a>
+        </li>
+        <li id="cart">
+            <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> CART</a>
+            <div id="counter_holder"><span id="counter_holder_span">0</span></div>
+            <ul id="cart_ul">
+                <!--<li>0 items, of $0.00 | <a href="#">Checkout</a></li>-->
+            </ul>
+        </li>
+        <!--<li id="Basic_header_search"><input id="Basic_header_search_input" type="search" name="search" placeholder="Search"></li>-->
+        <li id="Basic_header_contact">
+            <a href="tel:03472542156"><i class="fa fa-phone" aria-hidden="true"></i> 03472542156</a>
+        </li>
+    </ul>
+
+    <!-- END -->
+    <!-- Navigation -->
+    <div id="main_div_inventory_prius">
+        <div id="nav">
+            <ul>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="about_us.html">About Us </a></li>
+                <li><a href="Inventory.html">Inventory</a></li>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </div>
+        <a href="#priusIntro">
+            <div id="explore">
+                <p>Explore More</p>
+                <img src="../Images/Icons/ui-16-512.png" alt="Explore" width="5%">
+            </div>
+        </a>
+    </div>
+    <!-- Nav End -->
+    <!-- Main Content -->
+    <div id="priusIntro">
+        <div id="priusIntroName">
+            <h1><span id="priusIntroYearSpan">2017</span> PRIUS</h1>
+            <p>Take every one by surprise.</p>
+            <h5>SEE 2016 PRIUS</h5>
+        </div>
+        <div id="priusIntroprice">
+            <p>$2,587,851 <br /><span>starting msrp <sup>1</sup><br />as shown 33,666,259 <sup>1</sup></span></p>
+        </div>
+    </div>
+    <div id="additionalFeatures">
+        <button style="margin-left: -30%;">Prev Vehicle</button>
+        <button style="width: 125px;">request more info</button>
+        <button style="width: 125px;">shedule test drive</button>
+        <button>make an offer</button>
+        <button style="width: 125px;">trade In appraisal</button>
+        <a href="http://www.toyota.com/content/ebrochure/2017/prius_ebrochure.pdf" download><button>PDF brochure</button></a>
+        <button style="width: 125px;" onclick="window.print()">print this Vehicle</button>
+        <button>email to friend</button>
+        <button>next vehicle</button>
+    </div>
+    <div id="priusColors">
+        <img src="../Images/Prius Color/1.jpg" id="priusImages" alt="Prius red" />
+        <p id="priusColorName">Hypersonic Red</p>
+        <div id="colorButtons">
+            <button id="colorRed" style="background-color: #940D0E;" onclick="imageAndColorNameChanger('../Images/Prius Color/1.jpg','Hypersonic Red<sup>13</sup>');"></button>
+            <button id="colorPearl" style="background-color: #F3F2F2" onclick="imageAndColorNameChanger('../Images/Prius Color/2.jpg','BLIZZARD PEARL <sup>13</sup>');"></button>
+            <button id="colorSilver" style="background-color: #E1E1E1" onclick="imageAndColorNameChanger('../Images/Prius Color/3.jpg','Classic Silver Metallic<sup></sup>');"></button>
+            <button id="colorGray" style="background-color: #4B4A4A" onclick="imageAndColorNameChanger('../Images/Prius Color/4.jpg','Magnetic Gray Metallic<sup></sup>');"></button>
+            <button id="colorBlack" style="background-color: #00031E" onclick="imageAndColorNameChanger('../Images/Prius Color/5.jpg','Midnight Gray Metallic<sup></sup>');"></button>
+            <button id="colorSeaPearl" style="background-color: #94ADAF" onclick="imageAndColorNameChanger('../Images/Prius Color/6.jpg','Sea Glass pearl<sup></sup>');"></button>
+            <button id="colorBlue" style="background-color: #0359A6" onclick="imageAndColorNameChanger('../Images/Prius Color/7.jpg','Blue cursh metallic<sup></sup>');"></button>
+        </div>
+    </div>
+    <div id="prius-pics-nav">
+        <a href="exterior-photos.html">
+            <div id="prius_exterior_photos">
+                <img src="../Images/Prius Photos/PRS_MY16_0048_V001.jpg" />
+                <p style="font-size: 28px;left:80px">Exterior Photos</p>
+                <p>11 Photos</p>
+            </div>
+        </a>
+        <a href="interior-photos.html">
+            <div id="prius_interior_photos">
+                <img src="../Images/Prius Photos/PRS_MY16_0018_V001.jpg" />
+                <p style="font-size: 28px;left:80px">Interior Photos</p>
+                <p>9 Photos</p>
+            </div>
+        </a>
+        <a href="videos.html">
+            <div id="prius_videos">
+                <img src="../Images/Prius Photos/Prius_YouTube_LED.jpg" />
+                <p style="font-size: 28px;left:140px">Videos</p>
+                <p style="left: 149px;">9 VIDEOS</p>
+            </div>
+            <a href="https://www.toyota.com/prius/interior/#Panorama">
+                <div id="prius_360_view">
+                    <img src="../Images/Prius Photos/interior_tour.jpg" />
+                    <p style="font-size: 28px;left:80px">360 Interior Tour</p>
+                    <p>Experiunce Prius</p>
+                </div>
+            </a>
+    </div>
+    <p id="heading">Prius Highlights</p>
+    <div class="prius_extra_info" style="text-align:left;">
+        <img src="../Images/Prius Photos/PRS_MY16_0027_V001.jpg">
+        <div>
+            <span>Toyota Safety Sense<sup>TM</sup> <br />(TSS) Standard</span>
+            <br />
+            <span id="extra_safety_detail" class="extra_safety_details">Every 2017 Prius model is equipped Toyota Safety Sense <sup>TM</sup> P (TSS-P),<sup style="color:red;"> 20</sup> an advanced suite of safety technologies to help you drive with confidence.<br /><a href="JavaScript:void(0)" onclick='expandSafety();'><i class="fa fa-chevron-down" aria-hidden="true"></i>
+ Learn More</a></span></div>
+    </div>
+    <div class="prius_extra_info" style="text-align:right;">
+        <div>
+            <span>Exterior</span>
+            <br />
+            <span class="extra_safety_details" id="exterior_extra_text">LED headlights, LED taillights, and available 17-in. wheels help Prius make one powerfully stylish statement.<br /><a href="JavaScript:void(0)" onclick="expandExterior()"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+ Learn More</a></span>
+        </div>
+        <img src="../Images/Prius Photos/PRS_MY16_0009_V001.jpg" />
+    </div>
+    <div class="prius_extra_info" style="text-align:left;">
+        <img src="../Images/Prius Photos/PRS_MY16_0010_V001.jpg" width="70%">
+        <div>
+            <span>Performance</span>
+            <br />
+            <span id="extra_performance_detail" class="extra_safety_details">Every 2017 Prius model is equipped Toyota Safety Sense <sup>TM</sup> P (TSS-P),<sup style="color:red;"> 20</sup> an advanced suite of safety technologies to help you drive with confidence.<br /><a href="JavaScript:void(0)" onclick='expandPerformance();'><i class="fa fa-chevron-down" aria-hidden="true"></i>
+ Learn More</a></span></div>
+    </div>
+    <div class="prius_extra_info" style="text-align:right;">
+        <div>
+            <span>Technology</span>
+            <br />
+            <span class="extra_safety_details" id="technology_extra_text">Available features like Qi-compatible wireless smartphone charging 23 and Intelligent Clearance Sonar (ICS) 12 help you get more fun from every drive.<br /><a href="JavaScript:void(0)" onclick="expandTechnology()"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+ Learn More</a></span>
+        </div>
+        <img src="../Images/Prius Photos/PRS_MY16_0014_V002.jpg" width="70%" />
+    </div>
+    <button id="prius_all_feature_button">See All Features</button>
+    <!-- Main Content End -->
+    <!-- Sub Footer -->
+    <div id="sub-footer">
+        <div id="sub-footer-div">
+            <div id="sub-footer-table-controlling-div">
+                <table id="sub-footer-table">
+                    <tr>
+                        <th>About Us</th>
+                        <th>Contact Us</th>
+                        <th>Newsletter</th>
+                    </tr>
+                    <tr>
+                        <td class="sub-footer-table-td"> <img src="../Images/Author/IMG_20160725_170645.gif" alt="Author" id="author-image" /> Action Center
+                            is a central place to view alerts and take actions that can help keep Windows running smoothly.
+                            Action Center is a central place to view alerts and take actions that can help keep Windows running
+                            smoothly.
+                        </td>
+                        <td class="sub-footer-table-td"><img src="../Images/Icons/phone-16.png" alt="Phone" class="phone" /> Phone: <a href="tel: 03012793707"
+                                id="Sub-footer-my-number">03012793707</a> <br /><br /> Address: City Motors, near Chase Value
+                            Centre, Khalid Bin Walid Road, Karachi. <br /><br /><img src="../Images/Icons/email.png" alt="email"
+                                id="sub-email"> Email: <span id="sub-footer-myemail"><a href="mailto:ahsanusmanabduljabbar@gmail.com">ahsanusmanabduljabbar@gmail.com</a></span><br
+                            /><br /></td>
+                        <td class="sub-footer-table-td">By subscribe to our company newsletter you will always be up-to-date on our latest promotions, deals
+                            and vehicles inventory. <br /><br />
+                            <form action="#" method="post">
+                                <input type="email" name="email" placeholder="Enter your Email address" id="sub-footer-email-ask" />
+                                <br /><br />
+                                <input type="submit" name="Subscribe" value="Subscribe" id="sub-footer-subscribe" />
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+    <!-- Main Footer -->
+    <div id="footer">
+        <table>
+            <tr>
+                <th class="footer-table-spacing"></th>
+            </tr>
+            <tr>
+                <th class="footer-table-spacing"></th>
+            </tr>
+            <tr>
+                <th class="footer-table-spacing"></th>
+                <th id="footer-logo">City Motors</th>
+                <th class="footer-table-center-spacing"></th>
+                <!-- Social Media Bar -->
+                <th id="footer-table-social-media-bar">
+                    <ul id="social_media_ul">
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common facebook" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common twitter" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common youtube" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common vimeo" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common linkedin" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common rss" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common unknown" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common skype" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common g" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common pinterest" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common instagram" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../Images/Social Bar/Blank_-_Spacer.png" alt="" class="common unknown2" /></a>
+                        </li>
+                    </ul>
+                </th>
+            </tr>
+            <tr>
+                <!--<tr>
+                <th class="footer-table-spacing"></th>
+            </tr>-->
+                <tr>
+                    <td class="footer-table-spacing"></td>
+                    <td id="footer-copright-notice">Copyright &copy; 2016 by Ahsan Usman. All right reserved.</td>
+                    <th class="footer-table-center-spacing"></th>
+                    <th id="footer-table-navigation">
+                        <a href="../index.html">Home</a>
+                        <a href="Inventory.html">Inventory</a>
+                        <a href="about_us.html">About Us</a>
+                        <a href="contact_us.html">Contact Us</a>
+                    </th>
+                </tr>
+        </table>
+    </div>
+    <!-- END -->
+</body>
+<script src="../JS/scripts.js">
+</script>
+<script src="../JS/cart.js"></script>
+
+</html>

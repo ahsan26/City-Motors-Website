@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to City Motors</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
+    <meta name="robots" content="nofollow" />
+    <meta http-equiv="author" content="Ahsan Usman Abdul Jabbar" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <audio autoplay="true" src="Videos/18281474.mp3"></audio>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <ul id="Basic_header_ul">
+        <li id="login">
+            <a href="cart.html"><i class="fa fa-user" aria-hidden="true"></i> LOGIN</a>
+        </li>
+        <li id="cart">
+            <a href="HTML Files/cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> CART</a>
+            <div id="counter_holder"><span id="counter_holder_span">0</span></div>
+            <ul id="cart_ul">
+                <!--<li>0 items, of $0.00 | <a href="#">Checkout</a></li>-->
+            </ul>
+        </li>
+        <!--<li id="Basic_header_search"><input id="Basic_header_search_input" type="search" name="search" placeholder="Search"></li>-->
+        <li id="Basic_header_contact">
+            <a href="tel:03472542156"><i class="fa fa-phone" aria-hidden="true"></i> 03472542156</a>
+        </li>
+    </ul>
+    <!-- END -->
+    <!-- Navigation -->
+    <div id="main_div">
+        <div id="left" onclick="previous();">
+            <i class="fa fa-2x fa-angle-left slider-left" aria-hidden="true"></i><span id="slider_left_h"></span>
+        </div>
+        <div id="right" onclick="next();">
+            <i class="fa fa-2x fa-angle-right slider-right" aria-hidden="true"></i><span id="slider_right_h"></span>
+        </div>
+
+        <div id="nav">
+            <ul>
+                <li><a href="HTML Files/contact_us.html">Contact Us</a></li>
+                <li><a href="about_us.html">About Us </a></li>
+                <li><a href="HTML Files/Inventory.html">Inventory</a></li>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    <ul id="slider-ul"></ul>
+    </div>
+    <!-- END -->
+    <!-- Main Content -->
+    <div id="main_content_centre_div">
+        <div id="homepage_extra_elements">
+            <div id="results_driven">
+                <img src="Images/Homepage Images/Results Driven.PNG" alt="results driven" />
+                <h4 class="homepage_extra_elements_h4s">results driven</h4>
+                <p class="homepage_extra_elements_ps">Sed ut perspiciatis unde om nis natus error sit volup atem accusant dolorem que laudantium. Totam aperiam,
+                    eaque ipsa quae ai.</p>
+            </div>
+            <div id="proven_technology">
+                <img src="Images/Homepage Images/Proven Technology.PNG" alt="proven technology" />
+                <h4 class="homepage_extra_elements_h4s">proven technology</h4>
+                <p class="homepage_extra_elements_ps">Sed ut perspiciatis unde om nis natus error sit volup atem accusant dolorem que laudantium. Totam aperiam,
+                    eaque ipsa quae ai.
+                </p>
+            </div>
+            <div id="winning_culture">
+                <img src="Images/Homepage Images/Winning Culture.PNG" alt="winning Culture" />
+                <h4 class="homepage_extra_elements_h4s">winning culture</h4>
+                <p class="homepage_extra_elements_ps">Sed ut perspiciatis unde om nis natus error sit volup atem accusant dolorem que laudantium. Totam aperiam,
+                    eaque ipsa quae ai.
+
+                </p>
+            </div>
+            <div id="top_performance">
+                <img src="Images/Homepage Images/Top Performance.PNG" alt="top performance" />
+                <h4 class="homepage_extra_elements_h4s">top performance</h4>
+                <p class="homepage_extra_elements_ps">Sed ut perspiciatis unde om nis natus error sit volup atem accusant dolorem que laudantium. Totam aperiam,
+                    eaque ipsa quae ai.
+
+                </p>
+            </div>
+        </div>
+        <div style="display: flex;">
+
+
+            <div id="homepage_greeting">
+                <p class="homepage_greeting_1st_p"><span class="homepage_greeting_and_search_span">Welcome</span> to our new website</p>
+                <p id="homepage_greeting_2nd_p">Lorem ipsum dolor sit amet, falli tollit cetero te eos. Ea ullum liber aperiri mi, impetus ate philosophia
+                    ad duo, quem regione ne ius. Vis quis lobortis dissentias ex, in du aft philosophia, malis necessitatibus
+                    no mei. Volumus sensibus qui ex, eum duis doming ad. Modo liberavisse eu mel, no viris prompta sit. Pro
+                    labore sadipscing et. Ne peax egat usu te mel <i>vivendo scriptorem</i>. Pro labore sadipscing et. Ne
+                    pertinax egat usu te mel vivendo scriptorem. <br /><br />Cum ut tractatos imperdiet, no tamquam facilisi
+                    qui. Eum tibique onsectetuer in, an referrentur vis, vocent deseruisse ex mel. Sed te <i>idque graecis</i>.
+                    Vel ne libris dolores, mel graece mel vivendo scriptorem dolorum.</p>
+            </div>
+            <div id="homepage_search">
+                <p class="homepage_greeting_1st_p"><span class="homepage_greeting_and_search_span">search</span> our inventory</p>
+                <div id="homepage_search_sub_div">
+                    <div id="homepage_search_sub_div_first_column">
+                        <p><select name="Min year" class="homepage_search_min_year">
+        <option value="Min Year">Min Year</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+    </select> to
+                            <select name="Max year" class="homepage_search_min_year">
+        <option value="Max Year">Max Year</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+    </select>
+                        </p>
+                        <br />
+                        <select name="Brands" class="Homepage_select_brands">
+                <option value="Make">Make</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="Nissan">Nissan</option>
+            </select>
+                        <br /><br />
+                        <select name="model" class="Homepage_select_brands">
+                <option value="model">Model</option>
+                <!--<option value="search"><input type="search" name="search" placeholder="Search" /></option>-->
+                <option value="all model">All Models</option>
+            </select>
+                        <br /><br />
+                        <select name="body style" class="Homepage_select_brands">
+                <option value="Body Style">Body Style</option>
+                <option value="Cnvertible">Convertible</option>
+                <option value="Sedan">Sedan</option>
+                <option value="Sports Utility Vehicle">Sports Utility Vehicle</option>
+            </select>
+                        <br />
+                    </div>
+                    <div id="homepage_search_sub_div_second_column">
+                        <select name="Min Mileage" class="homepage_search_min_year">
+            <option value=" Min Mileage"> Min Mileage</option>
+			<option value="1000">1000</option>
+			<option value="1000">2000</option>
+			<option value="1000">3000</option>
+			<option value="1000">4000</option>
+			<option value="1000">5000</option>
+			<option value="1000">6000</option>
+			<option value="1000">7000</option>
+			<option value="1000">8000</option>
+			<option value="1000">9000</option>
+			<option value="1000">10000</option>
+        </select> to
+                        <select name="Max Mileage" class="homepage_search_min_year">
+            <option value=" Max Mileage"> Max Mileage</option>
+			<option value="1000">1000</option>
+			<option value="1000">2000</option>
+			<option value="1000">3000</option>
+			<option value="1000">4000</option>
+			<option value="1000">5000</option>
+			<option value="1000">6000</option>
+			<option value="1000">7000</option>
+			<option value="1000">8000</option>
+			<option value="1000">9000</option>
+			<option value="1000">10000</option>
+        </select>
+                        <br /><br />
+                        <select name="transmission" class="Homepage_select_brands">
+			<option value="5 Speed Manual">5 Speed Manual</option>
+			<option value="5 Speed Manual">6 Speed Manual</option>
+			<option value="5 Speed Manual">6 Speed Automatic</option>
+			<option value="5 Speed Manual">5 Speed Semi-Auto</option>
+		</select>
+                        <br /><br />
+                        <select name=" Min Price" class="homepage_search_min_year">
+            <option value=" Min Price">Min Price</option>
+			<option value="20,00000">20,00000</option>
+			<option value="30,00000">30,00000</option>
+			<option value="40,00000">40,00000</option>
+			<option value="50,00000">50,00000</option>
+			<option value="60,00000">60,00000</option>
+        </select> to <select name=" Min Price" class="homepage_search_min_year">
+            <option value=" Min Price">Min Price</option>
+			<option value="20,00000">20,00000</option>
+			<option value="30,00000">30,00000</option>
+			<option value="40,00000">40,00000</option>
+			<option value="50,00000">50,00000</option>
+			<option value="60,00000">60,00000</option>
+        </select>
+
+                    </div>
+                </div>
+                <button id="hp_search">Find my new vehicles</button>
+
+            </div>
+        </div>
+        <div id="third_row">
+            <div id="third_row_first_column">
+                <h3>recent vehicles</h3>
+                <p>Browse through the vast selection of vehicles that have recently been added to our inventory.</p>
+            </div>
+            <a id="third_row_second_column" href="JavaScript:void(0)">
+                <img src="Images/Homepage Images/Carolla Altis 16L.jpg" alt="Carolla Altis 1.6L" class="third_row_all_columns_img" />
+                <p class="third_row_all_columns_strong"><strong>Corolla Altis 1.6L</strong></p>
+                <p class="third_row_all_columns_sinmple_p">No owners, Brand new</p>
+                <p class="third_row_all_columns_price"><strong>PKR. 1,994,000/-</strong></p>
+                </a>
+            <div id="third_row_third_column">
+                <img src="Images/BI/1.jpg" alt="Carolla Altis Grande" class="third_row_all_columns_img" />
+                <p class="third_row_all_columns_strong"><strong>Corolla Altis Grande</strong></p>
+                <p class="third_row_all_columns_sinmple_p">No owners, Brand new</p>
+                <p class="third_row_all_columns_price"><strong>PKR. 2,069,000/-</strong></p>
+            </div>
+            <div id="third_row_four_column">
+                <img src="Images/Homepage Images/Honda-Accord-3.jpg" alt="Honda Accord 2.4 Vti L" class="third_row_all_columns_img" />
+                <p class="third_row_all_columns_strong"><strong>Honda Accord 2.4 Vti L</strong></p>
+                <p class="third_row_all_columns_sinmple_p">No owners, Brand new</p>
+                <p class="third_row_all_columns_price"><strong>PKR. 11,250,000/-</strong></p>
+            </div>
+            <div id="third_row_five_column">
+                <img src="Images/Homepage Images/suzuki_swift_frontaction.jpg" alt="Suzuki Swift" class="third_row_all_columns_img" />
+                <p class="third_row_all_columns_strong"><strong>Suzuki Swift</strong></p>
+                <p class="third_row_all_columns_sinmple_p">No owners, Brand new</p>
+                <p class="third_row_all_columns_price"><strong>PKR. 1,511,000/-</strong></p>
+            </div>
+            <div id="third_row_six_column">
+                <img src="Images/Homepage Images/suzuki-wagon-r-vxl-2-2015-8155871.jpg" alt="Suzuki WagonR" class="third_row_all_columns_img"
+                />
+                <p class="third_row_all_columns_strong"><strong>Suzuki WagonR V&times;L</strong></p>
+                <p class="third_row_all_columns_sinmple_p">No owners, Brand new</p>
+                <p class="third_row_all_columns_price"><strong>PKR. 1,049,000/-</strong></p>
+            </div>
+        </div>
+    </div>
+    <div id="homepage_partner_toyota">
+        <p>Our biggest Partner:</p>
+        <video width="100%" height="900px" controls id="toyota-song" poster="Videos/i.png">
+            <source src="Videos/toyota-song.mp4">
+        </video>
+        <script>
+            var video = document.getElementById('toyota-song'),
+                fraction = 0.8;
+
+            function checkScroll() {
+                var x = video.offsetLeft,
+                    y = video.offsetTop,
+                    w = video.offsetWidth,
+                    h = video.offsetHeight,
+                    r = x + w, //right
+                    b = y + h, //bottom
+                    visibleX, visibleY, visible;
+
+                visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+                visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+                visible = visibleX * visibleY / (w * h);
+
+                if (visible > fraction) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            }
+            checkScroll();
+            window.addEventListener('scroll', checkScroll, false);
+            window.addEventListener('resize', checkScroll, false);
+        </script>
+    </div>
+    <!-- END -->
+    <!-- Sub Footer -->
+    <div id="sub-footer">
+        <div id="sub-footer-div">
+            <div id="sub-footer-table-controlling-div">
+                <table id="sub-footer-table">
+                    <tr>
+                        <th>About Us</th>
+                        <th>Contact Us</th>
+                        <th>Newsletter</th>
+                    </tr>
+                    <tr>
+                        <td class="sub-footer-table-td"> <img src="Images/Author/IMG_20160725_170645.gif" alt="Author" id="author-image" /> Action Center
+                            is a central place to view alerts and take actions that can help keep Windows running smoothly.
+                            Action Center is a central place to view alerts and take actions that can help keep Windows running
+                            smoothly.
+                        </td>
+                        <td class="sub-footer-table-td"><img src="Images/Icons/phone-16.png" alt="Phone" class="phone" /> Phone:
+                            <a href="tel: 03012793707" id="Sub-footer-my-number">03012793707</a> <br /><br /> Address: City
+                            Motors, near Chase Value Centre, Khalid Bin Walid Road, Karachi. <br /><br />
+                            <img src="Images/Icons/email.png" alt="email" id="sub-email"> Email: <span id="sub-footer-myemail"><a href="mailto:ahsanusmanabduljabbar@gmail.com">ahsanusmanabduljabbar@gmail.com</a></span><br
+                            /><br /></td>
+                        <td class="sub-footer-table-td">By subscribe to our company newsletter you will always be up-to-date on our latest promotions, deals
+                            and vehicles inventory. <br /><br />
+                            <form action="#" method="post">
+                                <input type="email" name="email" placeholder="Enter your Email address" id="sub-footer-email-ask" />
+                                <br /><br />
+                                <input type="submit" name="Subscribe" value="Subscribe" id="sub-footer-subscribe" />
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+    <!-- Main Footer -->
+    <div id="footer">
+        <table>
+            <tr>
+                <th class="footer-table-spacing"></th>
+            </tr>
+            <tr>
+                <th class="footer-table-spacing"></th>
+            </tr>
+            <tr>
+                <th class="footer-table-spacing"></th>
+                <th id="footer-logo">City Motors</th>
+                <th class="footer-table-center-spacing"></th>
+                <!-- Social Media Bar -->
+                <th id="footer-table-social-media-bar">
+                    <ul id="social_media_ul">
+                        <li>
+                            <a href="#"><img src="Images/Social Bar/Blank_-_Spacer.png" alt="" class="common facebook" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="Images/Social Bar/Blank_-_Spacer.png" alt="" class="common twitter" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="Images/Social Bar/Blank_-_Spacer.png" alt="" class="common youtube" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="Images/Social Bar/Blank_-_Spacer.png" alt="" class="common vimeo" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="Images/Social Bar/Blank_-_Spacer.png" alt="" class="common linkedin" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="Images/Social Bar/Blank_-_Spacer.png" alt="" class="common rss" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="Images/Social Bar/Blank_-_Spacer.png" alt="" class="common unknown" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="Images/Social Bar/Blank_-_Spacer.png" alt="" class="common skype" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="Images/Social Bar/Blank_-_Spacer.png" alt="" class="common g" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="Images/Social Bar/Blank_-_Spacer.png" alt="" class="common pinterest" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="Images/Social Bar/Blank_-_Spacer.png" alt="" class="common instagram" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="Images/Social Bar/Blank_-_Spacer.png" alt="" class="common unknown2" /></a>
+                        </li>
+                    </ul>
+                </th>
+            </tr>
+            <tr>
+                <!--<tr>
+                <th class="footer-table-spacing"></th>
+            </tr>-->
+                <tr>
+                    <td class="footer-table-spacing"></td>
+                    <td id="footer-copright-notice">Copyright &copy; 2016 by Ahsan Usman. All right reserved.</td>
+                    <th class="footer-table-center-spacing"></th>
+                    <th id="footer-table-navigation">
+                        <a href="index.html">Home</a>
+                        <a href="HTML Files/Inventory.html">Inventory</a>
+                        <a href="#">About Us</a>
+                        <a href="HTML Files/contact_us.html">Contact Us</a>
+                    </th>
+                </tr>
+        </table>
+    </div>
+    <!-- END -->
+    <script src="JS/slider.js"></script>
+    <script src="JS/cart.js"></script>
+</body>
+
+</html>
